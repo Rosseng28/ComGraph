@@ -1,1 +1,81 @@
+#include<iostream>
+using namespace std;
 
+int main()
+{
+
+    int choices, payment, change;
+    
+    cout << "Menu\n==========";
+    cout << "\n1 - Cola [P20.00]"
+            "\n2 - Ramune [P18.00]"
+            "\n3 - Beer [P40.00]"
+            "\n4 - Coffee [P25.00]";
+    
+    cout <<"\n\nEnter Selection: ";
+    cin >> choices;
+    
+    switch (choices){
+    
+        case 1: // choice 1 Cola
+            cout << "\nInput Payment: ";
+            cin >> payment;
+            
+            if (payment >=20){
+            cout << "\nTransaction Successful";
+            
+            change = payment - 20;
+            cout << "\nChange: " << change;
+            }
+            else
+                cout << "\nInsufficient Funds";
+        break;
+        
+        case 2: // choice 2 Ramune
+            cout << "\nInput Payment: ";
+            cin >> payment;
+            
+            if (payment >=18){
+            cout << "\nTransaction Successful";
+            
+            change = payment - 18;
+            cout << "\nChange: " << change;
+            }
+            else
+                cout << "\nInsufficient Funds";
+            
+        break;
+        
+        case 3: // choice 3 Beer
+            cout << "\nInput Payment: ";
+            cin >> payment;
+            
+            if (payment >=40){
+            cout << "\nTransaction Successful";
+            
+            change = payment - 40;
+            cout << "\nChange: " << change;
+            }
+            else
+                cout << "\nInsufficient Funds";
+           
+        break;
+        
+        case 4: // choice 4 Coffee
+            cout << "\nInput Payment: ";
+            cin >> payment;
+            
+            if (payment >=25){
+            cout << "\nTransaction Successful";
+            
+            change = payment - 25;
+            cout << "\nChange: " << change;
+            }
+            else
+                cout << "\nInsufficient Funds";
+ 
+        break;
+        }
+    
+    return 0;
+}
