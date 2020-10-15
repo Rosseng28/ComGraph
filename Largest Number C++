@@ -8,13 +8,13 @@ int main()
     cout <<"Enter Three Different Number: ";
     cin >> n1 >> n2 >> n3;
     
-    if(n1>=n2 && n1>=n3)
+    if(n1>=n2 && n1>=n3) // if n1 is greater than or equal n2 and n3
         cout << "\nLargest Number: " << n1;
         
-    if(n2>=n1 && n2>=n3)
+    if(n2>=n1 && n2>=n3) // if n2 is greater than or equal n1 and n3
         cout << "\nLargest Number: " << n2;
         
-    if(n3>=n1 && n3>=n2)
+    if(n3>=n1 && n3>=n2) // if n3 is greater than or equal n1 and n2
         cout << "\nLargest Number: " << n3;
     
     
