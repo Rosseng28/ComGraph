@@ -1,0 +1,50 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    
+    int n,i, inputArray[20];
+    int sum = 0;
+    float average;
+    
+            cout << "Enter the Number of Data: ";
+            cin >> n;
+        
+        if (n < 20){
+            for(i=0; i < n; i++){
+            
+            cout << i+1 << ". Enter Number: ";
+            cin >> inputArray[i];
+            }
+            
+            for(i = 0; i < n; i++){
+            sum = sum + inputArray[i];
+            }
+        average = (float) sum / n;
+        cout << "Average: " << average;
+ 
+        }
+        if (n>20){
+        cout << "Error! Number Should in Range (1 to 20)\n";
+        cout << "Enter the Number Again: ";
+        cin >> n;
+        
+        for(i=0; i < n; i++){
+            
+            cout << i+1 << ". Enter Number: ";
+            cin >> inputArray[i];
+            }
+            
+            for(i = 0; i < n; i++){
+            sum = sum + inputArray[i];          
+        }
+        average = (float) sum / n;
+        cout << "Average: " << average;
+        
+        }
+        
+        cout << "\n\nProgrammed by: Rosalinda Lebosada";
+
+    return 0;
+}
