@@ -1,0 +1,94 @@
+#include <iostream>
+using namespace std;
+
+void add (){
+	
+	int add, n1,n2; // for addition
+	
+		cout <<"Enter first number: ";
+		cin >> n1;
+		cout << "Enter second number: ";
+		cin >> n2;
+		
+		add = n1 + n2;
+	
+	cout << "Answer: " << n1 << " + " << n2 << " = " << add;
+
+}
+
+void multiply(){ // for multiplication
+	 int multiply, n1, n2;
+	 
+	 cout << "Enter first number: ";
+	 cin >> n1;
+	 cout << "Enter second number: ";
+	 cin >> n2;
+	 
+	 multiply = n1 * n2;
+	 
+	 cout << "Answer: " << n1 << " * " << n2 << " = " << multiply;
+}
+
+void divide (){
+	int divide, n1, n2;
+	
+	cout << "Enter first number: ";
+	cin >> n1;
+	cout << "Enter second number: ";
+	cin >> n2;
+	
+	divide = n1 / n2;
+	
+	cout << "Answer: " << n1 << " / " << n2 << " = " << divide; 
+}
+
+void subtruct(){
+	
+	int subtract, n1, n2;
+	
+	cout << "Enter first number: ";
+	cin >> n1;
+	cout << "Enter second number: ";
+	cin >> n2;
+	
+	subtract = n1 - n2;
+	
+	cout << "Answer: " << n1 << " - " << n2 << " = " << subtruct;
+}
+
+int main(){
+	int choice;
+	
+	cout << "-----[Menu]-----\n";
+	cout << "[1] ADD\n";
+	cout << "[2] MULTIPLY\n";
+	cout << "[3] DIVIDE\n";
+	cout << "[4] SUBTRUCT\n";
+	
+	cout << "Input Choice: ";
+	cin >> choice;
+	
+	switch (choice){
+		
+		case 1:
+		add();
+		break;
+		
+		case 2:
+		multiply();
+		break;
+		
+		case 3:
+		divide();
+		break;
+		
+		case 4:
+		subtruct();	
+	}
+	
+	
+	if (choice > 4){
+		cout << "Not in the choices";
+	}
+	
+}
